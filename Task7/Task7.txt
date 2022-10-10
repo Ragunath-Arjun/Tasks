@@ -1,0 +1,35 @@
+					TASK 07
+
+
+1)Solving problems using array functions on the rest countries' data.
+
+a.Get all the countries from the Asia continent /region using the Filter function
+
+var reg=result.filter((ele)=>ele.region=="Asia");
+    console.log(reg);
+    var res1=reg.map((ele)=>ele.name);
+    console.log(res1);
+
+b.Get all the countries with a population of less than 2 lakhs using Filter function
+
+var reg=result.filter((ele)=>ele.population<200000);
+    console.log(reg);
+    var res1=reg.map((ele)=>ele.name);
+    console.log(res1);
+
+c.Print the following details name, capital, flag using forEach function
+
+result.forEach((element) => {
+        console.log(element.name,element.capital,element.flag);
+    });
+
+d.Print the total population of countries using reduce function
+
+var total=result.reduce((acc,cv)=>acc+cv.population,0)
+    console.log(total);
+
+e.Print the country which uses US Dollars as currency.
+
+  for(var i=0; i<result.length; i++){
+    console.log(result[i].name);
+    }
